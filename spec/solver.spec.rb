@@ -19,3 +19,13 @@ describe 'factorial solver - ' do
     expect { solver.factorial(-555) }.to raise_error('negative integers are not allowed')
   end
 end
+
+describe 'reverse a word - ' do
+  it 'Reverse the work "Hello" to "olleh"' do
+    expect(solver.reverse('hello')).to eq('olleh')
+  end
+
+  it 'Reverse the work "world" to "dlrow"' do
+    expect(solver.reverse('world')).to eq('dlrow')
+  end
+end
